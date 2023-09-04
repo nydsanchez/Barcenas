@@ -529,9 +529,7 @@
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Escríbenos</h3>
-              <p>publicacioneseif@gmail.com
-                <br>contact@example.com
-              </p>
+              <p>publicacioneseif@gmail.com</p>
             </div>
           </div>
 
@@ -546,7 +544,26 @@
 
         <div class="row">
 
-          <div class="col-lg-6 d-flex" data-aos="fade-up">
+          <div class="col-lg-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            </form>
+          </div>
+
+          <div class="col-lg-6 d-flex" data-aos="fade-up" data-aos-delay="300">
 
             <div class="ratio ratio-16x9">
               <iframe
