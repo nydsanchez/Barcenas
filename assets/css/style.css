@@ -8,11 +8,22 @@
 */
 
 /*--------------------------------------------------------------
+variables
+--------------------------------------------------------------*/
+:root {
+  --fuente-texto: "Open Sans", sans-serif;
+  --fuente-principal: "Raleway", sans-serif;
+  --color-fuente-principal: #444;
+  --color-enlace: #428bca;
+  --color-enlace-hover: #9eccf4;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444;
+  color: var(--color-fuente-principal);
 }
 
 a {
@@ -36,7 +47,7 @@ h6,
 }
 
 /*--------------------------------------------------------------
-# Back to top button
+# Back to top button (flecha)
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
@@ -50,6 +61,7 @@ h6,
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
+  border: 1px solid red;
 }
 
 .back-to-top i {
